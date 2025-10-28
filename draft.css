@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fffaf2;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #ff6f61;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.login-btn, .signup-btn {
+  background-color: white;
+  color: #ff6f61;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.login-btn:hover, .signup-btn:hover {
+  background-color: #ffe5e5;
+}
+
+/* HERO */
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero-search {
+  margin-top: 25px;
+}
+
+.hero-search input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 25px;
+  border: none;
+}
+
+.hero-search button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.hero-buttons button {
+  background-color: white;
+  color: #ff6f61;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.hero-buttons button:hover {
+  background-color: #ffd6d6;
+}
+
+/* CATEGORIES */
+.categories {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: #ffefef;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.category:hover {
+  background-color: #ffc2c2;
+}
+
+/* RESTAURANTS */
+.restaurants {
+  background-color: #fff0f0;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.restaurant-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.restaurant {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 15px;
+  padding: 10px;
+  width: 220px;
+}
+
+.restaurant img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.restaurant h3 {
+  margin: 10px 0 5px 0;
+}
+
+.restaurant button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.restaurant button:hover {
+  background-color: #e85c50;
+}
+
+/* OFFERS */
+.offers {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.offer-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.offer {
+  background-color: #ffe5e5;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  width: 250px;
+}
+
+.offer h3 {
+  color: #ff6f61;
+}
+
+.offer button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.offer button:hover {
+  background-color: #e85c50;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

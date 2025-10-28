@@ -1,0 +1,216 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fffaf2;
+}
+
+/* Header */
+header {
+    background-color: #ff4d4d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: 20px;
+    
+}
+
+.login-btn, .signup-btn {
+    background-color: white;
+    color: #ff4d4d;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.login-btn:hover, .signup-btn:hover{
+    background-color: #ffe5e5;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background-color: #ffe5e5;
+    padding: 200px 20px;
+    background-image: url("https://plus.unsplash.com/premium_photo-1661627606440-a901eb9588c5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJlc3RhdXJhbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000");
+    font-family: 'Playwrite US Modern', sans-serif;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.hero h1 {
+    font-size: 80px;
+    
+    
+}
+
+.hero p {
+    font-size: 28px;
+    color: black;
+    
+}
+
+.hero-options {
+    margin-top: 70px;
+}
+
+.hero-options input {
+    padding: 11px;
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+    
+}
+
+.hero-options button {
+    padding: 12px 25px;
+    margin-left: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.hero-options button:hover {
+    background-color: #e63939;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+.categories h2 {
+    font-size: 50px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+
+.category {
+    background-color: #ff6f6f;
+    margin: 15px;
+    padding: 20px 30px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: #ff9999;
+}
+
+/* Popular Dishes */
+.popular {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.dish-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dish {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 8px;
+    height: 60%;
+}
+
+/* Featured Restaurants */
+.restaurants {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.restaurant-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.restaurant {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.restaurant img {
+    width: 100%;
+    border-radius: 8px;
+    height: 60%;
+}
+
+/* Steps */
+.steps {
+    background-color: #fff0f0;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.step-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 250px;
+    margin: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
