@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a.active {
+  color: #ff6600;
+}
+
+.auth-buttons button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: 1px solid #ff6600;
+  background: none;
+  color: #ff6600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-buttons .signup {
+  background: #ff6600;
+  color: #fff;
+}
+
+/* Menu Header */
+.menu-header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.menu-filters {
+  margin-top: 15px;
+}
+
+.menu-filters a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  border: 1px solid #ff6600;
+  background: none;
+  border-radius: 20px;
+  color: #ff6600;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-filters a:hover {
+  background: #ff6600;
+  color: white;
+}
+
+/* Category Section */
+.category {
+  padding: 20px 40px;
+}
+
+.category h3 {
+  color: #ff6600;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.menu-card h4 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.menu-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.menu-card button {
+  margin-top: 10px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-card button:hover {
+  background: #e85a00;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
