@@ -1,153 +1,630 @@
+/* ================================================
+   BASIC CSS - MENU PAGE (MATCHING MAIN PAGE THEME)
+   ================================================ */
+
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: #fff;
-  border-bottom: 1px solid #eee;
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #ff6600;
+/* ================================================
+   HEADER NAVIGATION
+   ================================================ */
+
+.main-header {
+    background-color: #ff6b35;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a.active {
-  color: #ff6600;
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
 }
 
-.auth-buttons button {
-  margin-left: 8px;
-  padding: 6px 12px;
-  border: 1px solid #ff6600;
-  background: none;
-  color: #ff6600;
-  border-radius: 4px;
-  cursor: pointer;
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
-.auth-buttons .signup {
-  background: #ff6600;
-  color: #fff;
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-/* Menu Header */
-.menu-header {
-  text-align: center;
-  padding: 30px 20px;
+.main-nav a:hover {
+    color: #ffe66d;
 }
 
-.menu-filters {
-  margin-top: 15px;
+.main-nav a.active {
+    color: #ffe66d;
 }
 
-.menu-filters a {
-  display: inline-block;
-  margin: 5px;
-  padding: 8px 15px;
-  border: 1px solid #ff6600;
-  background: none;
-  border-radius: 20px;
-  color: #ff6600;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
+.header-buttons {
+    display: flex;
+    gap: 15px;
 }
 
-.menu-filters a:hover {
-  background: #ff6600;
-  color: white;
+.btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-/* Category Section */
-.category {
-  padding: 20px 40px;
+.btn-signup {
+    background-color: #ffe66d;
+    color: #333;
+    border: 2px solid #ffe66d;
 }
 
-.category h3 {
-  color: #ff6600;
-  font-size: 22px;
-  margin-bottom: 15px;
+.btn-signup:hover {
+    background-color: #ffd93d;
 }
 
-/* Menu Grid */
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+.btn-login {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
 }
 
-.menu-card {
-  border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  background: #fafafa;
-  transition: 0.3s;
+.btn-login:hover {
+    background-color: white;
+    color: #ff6b35;
 }
 
-.menu-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* ================================================
+   HERO SECTION
+   ================================================ */
+
+.menu-hero {
+    background-color: #ff6b35;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
 }
 
-.menu-card img {
-  width: 100%;
-  height: 150px;
-  border-radius: 10px;
-  object-fit: cover;
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.menu-card h4 {
-  margin: 10px 0 5px;
-  color: #333;
+.hero-content p {
+    font-size: 20px;
 }
 
-.menu-card p {
-  font-size: 14px;
-  color: #666;
+/* ================================================
+   FILTER SECTION
+   ================================================ */
+
+.filter-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
 }
 
-.menu-card button {
-  margin-top: 10px;
-  background: #ff6600;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
+.filter-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
-.menu-card button:hover {
-  background: #e85a00;
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* Footer */
-footer {
-  background: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
+.filter-tabs input[type="radio"] {
+    display: none;
 }
 
-/* Smooth scroll effect */
-html {
-  scroll-behavior: smooth;
+.filter-btn {
+    padding: 12px 30px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-tabs input[type="radio"]:checked + .filter-btn {
+    background-color: #ff6b35;
+    color: white;
+    border-color: #ff6b35;
+}
+
+.filter-btn:hover {
+    background-color: #ff6b35;
+    color: white;
+    border-color: #ff6b35;
+}
+
+/* Filter Logic */
+#veg-only:checked ~ .container .food-item.nonveg {
+    display: none;
+}
+
+#nonveg-only:checked ~ .container .food-item.veg {
+    display: none;
+}
+
+/* ================================================
+   RESTAURANT SECTION
+   ================================================ */
+
+.restaurant-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.restaurant-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.restaurant-card {
+    flex: 1;
+    min-width: 260px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ff6b35;
+}
+
+.restaurant-info {
+    padding: 20px;
+}
+
+.restaurant-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.restaurant-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.view-menu-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #ff6b35;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.view-menu-btn:hover {
+    background-color: #e55a2b;
+}
+
+/* ================================================
+   CATEGORY NAVIGATION
+   ================================================ */
+
+.category-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f9f9f9;
+}
+
+.category-nav {
+    margin-top: 30px;
+}
+
+.category-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.category-menu > li {
+    position: relative;
+}
+
+.category-menu > li > a {
+    display: block;
+    padding: 15px 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.category-menu > li > a:hover {
+    background-color: #ff6b35;
+    color: white;
+}
+
+/* Dropdown Submenu */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+    z-index: 100;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.submenu a:hover {
+    background-color: #f9f9f9;
+    color: #ff6b35;
+    padding-left: 30px;
+}
+
+/* ================================================
+   MENU ITEMS SECTION
+   ================================================ */
+
+.menu-items-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+/* Subcategory Tabs */
+.subcategory-tabs {
+    margin-top: 30px;
+}
+
+.subcategory-tabs input[type="radio"] {
+    display: none;
+}
+
+.tab-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: white;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subcategory-tabs input[type="radio"]:checked + .tab-btn {
+    background-color: #ff6b35;
+    color: white;
+    border-color: #ff6b35;
+}
+
+.tab-btn:hover {
+    background-color: #ff6b35;
+    color: white;
+    border-color: #ff6b35;
+}
+
+/* Tab Content Display */
+.tab-content {
+    display: none;
+    margin-top: 30px;
+}
+
+#all-burgers:checked ~ .show-all {
+    display: block;
+}
+
+#veg-burgers-tab:checked ~ .show-veg {
+    display: block;
+}
+
+#chicken-burgers-tab:checked ~ .show-chicken {
+    display: block;
+}
+
+#beef-burgers-tab:checked ~ .show-beef {
+    display: block;
+}
+
+/* ================================================
+   FOOD ITEMS GRID
+   ================================================ */
+
+.food-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.food-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.food-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.diet-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.veg-badge {
+    background-color: #77dd77;
+    color: white;
+}
+
+.nonveg-badge {
+    background-color: #ff6961;
+    color: white;
+}
+
+.special-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffe66d;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.food-details {
+    padding: 20px;
+}
+
+.food-details h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.food-details p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.food-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6b35;
+}
+
+.add-btn {
+    padding: 8px 20px;
+    background-color: #ff6b35;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.add-btn:hover {
+    background-color: #e55a2b;
+}
+
+/* ================================================
+   FOOTER
+   ================================================ */
+
+.main-footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+}
+
+.main-footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* ================================================
+   RESPONSIVE DESIGN
+   ================================================ */
+
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .restaurant-grid {
+        flex-direction: column;
+    }
+
+    .restaurant-card {
+        min-width: 100%;
+    }
+
+    .food-grid {
+        flex-direction: column;
+    }
+
+    .food-item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .category-menu {
+        flex-direction: column;
+    }
+
+    .submenu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        padding-left: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .has-submenu:hover .submenu {
+        display: block;
+    }
+
+    .filter-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btn {
+        width: 200px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
 }

@@ -1,145 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TastyHub — Menu</title>
-  <link rel="stylesheet" href="menu.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu - Food Delivery</title>
+    <link rel="stylesheet" href="Menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1>🍽️ FoodHub</h1>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <a href="#signup" class="btn btn-signup">Sign Up</a>
+          <a href="#login" class="btn btn-login">Login</a>
+        </div>
+      </div>
+    </header>
 
-  <header>
-    <div class="logo">TastyHub</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html" class="active">Menu</a>
-      <a href="#">Restaurants</a>
-      <a href="#">Deals</a>
-    </nav>
-    <div class="auth-buttons">
-      <button class="signin">Sign In</button>
-      <button class="signup">Sign Up</button>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section class="menu-hero">
+      <div class="hero-content">
+        <h1>Explore Our Menu</h1>
+        <p>Choose from top restaurants and delicious cuisines</p>
+      </div>
+    </section>
 
-  <section class="menu-header">
-    <h2>Explore Our Menu</h2>
-    <p>Pick a category and choose Veg or Non-Veg</p>
-    <div class="menu-filters">
-      <a href="#burgers">Burgers</a>
-      <a href="#pizza">Pizza</a>
-      <a href="#sushi">Sushi</a>
-      <a href="#tacos">Tacos</a>
-      <a href="#top">All</a>
-      <a href="#veg-options" class="veg">Veg</a>
-      <a href="#nonveg-options" class="nonveg">Non-Veg</a>
-      
-    </div>
-  </section>
+    <!-- Filter Section (CSS Only) -->
+    <section class="filter-section">
+      <div class="container">
+        <h2>Filter Your Choice</h2>
+        <div class="filter-tabs">
+          <input type="radio" name="diet-filter" id="all-items" checked />
+          <input type="radio" name="diet-filter" id="veg-only" />
+          <input type="radio" name="diet-filter" id="nonveg-only" />
 
-  <!-- Burgers Section -->
-  <section id="burgers" class="category">
-    <h3>🍔 Burgers</h3>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Cheese Burger">
-        <h4>Cheese Burger (Non-Veg)</h4>
-        <p>Juicy grilled beef patty with cheese and lettuce.</p>
-        <button>Add to Cart</button>
+          <label for="all-items" class="filter-btn">All Items</label>
+          <label for="veg-only" class="filter-btn">🌿 Vegetarian</label>
+          <label for="nonveg-only" class="filter-btn">🍖 Non-Veg</label>
+        </div>
       </div>
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1601924582971-c9e8e0d0b4c6" alt="Veggie Burger">
-        <h4>Veggie Burger (Veg)</h4>
-        <p>Loaded with veggies and creamy mayo.</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="Double Burger">
-        <h4>Double Delight Burger (Non-Veg)</h4>
-        <p>Double patty with melted cheese & BBQ sauce.</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Pizza Section -->
-  <section id="pizza" class="category">
-    <h3>🍕 Pizza</h3>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1601924574351-68bde580aaf9" alt="Pepperoni Pizza">
-        <h4>Pepperoni Pizza (Non-Veg)</h4>
-        <p>Cheesy pizza topped with spicy pepperoni.</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1548365328-5e0b0a1a3c8b" alt="Margherita Pizza">
-        <h4>Margherita Pizza (Veg)</h4>
-        <p>Classic tomato and mozzarella with fresh basil.</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be3c" alt="Veg Supreme Pizza">
-        <h4>Veg Supreme Pizza (Veg)</h4>
-        <p>Topped with bell peppers, olives, and corn.</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
-  </section>
+    <!-- Restaurant Selection -->
+    <section class="restaurant-section">
+      <div class="container">
+        <h2 class="section-title">Select Restaurant</h2>
+        <div class="restaurant-grid">
+          <!-- Restaurant 1 -->
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop"
+                alt="Restaurant"
+              />
+              <div class="restaurant-badge">⭐ 4.5</div>
+            </div>
+            <div class="restaurant-info">
+              <h3>The Grand Kitchen</h3>
+              <p>Multi-Cuisine • 30-40 mins</p>
+              <a href="#grand-kitchen" class="view-menu-btn">View Menu</a>
+            </div>
+          </div>
 
-  <!-- Sushi Section -->
-  <section id="sushi" class="category">
-    <h3>🍣 Sushi</h3>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1562158070-622a0b1bfa6e" alt="California Roll">
-        <h4>California Roll (Non-Veg)</h4>
-        <p>Crab, avocado, and cucumber rolled in rice.</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1605478571966-cdf9b010b80e" alt="Spicy Tuna Roll">
-        <h4>Spicy Tuna Roll (Non-Veg)</h4>
-        <p>Fresh tuna with spicy mayo and sesame.</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1625948965723-b1861488b64d" alt="Veg Maki Roll">
-        <h4>Veg Maki Roll (Veg)</h4>
-        <p>Avocado, cucumber, and carrot sushi roll.</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
-  </section>
+          <!-- Restaurant 2 -->
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&h=300&fit=crop"
+                alt="Restaurant"
+              />
+              <div class="restaurant-badge">⭐ 4.7</div>
+            </div>
+            <div class="restaurant-info">
+              <h3>Spice Route</h3>
+              <p>Indian Cuisine • 25-35 mins</p>
+              <a href="#spice-route" class="view-menu-btn">View Menu</a>
+            </div>
+          </div>
 
-  <!-- Tacos Section -->
-  <section id="tacos" class="category">
-    <h3>🌮 Tacos</h3>
-    <div class="menu-grid">
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1c9d0" alt="Chicken Tacos">
-        <h4>Chicken Tacos (Non-Veg)</h4>
-        <p>Grilled chicken, lettuce, and salsa in soft tortillas.</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1612874742237-652d4d16d4c3" alt="Veg Tacos">
-        <h4>Veg Tacos (Veg)</h4>
-        <p>Loaded with beans, cheese, and veggies.</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="menu-card">
-        <img src="https://images.unsplash.com/photo-1625948965723-b1861488b64d" alt="Fish Tacos">
-        <h4>Fish Tacos (Non-Veg)</h4>
-        <p>Crispy fish with creamy dressing and cabbage.</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
-  </section>
+          <!-- Restaurant 3 -->
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop"
+                alt="Restaurant"
+              />
+              <div class="restaurant-badge">⭐ 4.3</div>
+            </div>
+            <div class="restaurant-info">
+              <h3>Pizza Paradise</h3>
+              <p>Italian • 20-30 mins</p>
+              <a href="#pizza-paradise" class="view-menu-btn">View Menu</a>
+            </div>
+          </div>
 
-  <footer>
-    © 2025 TastyHub. All rights reserved.
-  </footer>
+          <!-- Restaurant 4 -->
+          <div class="restaurant-card">
+            <div class="restaurant-image">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop"
+                alt="Restaurant"
+              />
+              <div class="restaurant-badge">⭐ 4.6</div>
+            </div>
+            <div class="restaurant-info">
+              <h3>Burger Junction</h3>
+              <p>Fast Food • 15-25 mins</p>
+              <a href="#burger-junction" class="view-menu-btn">View Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Category Menu with Subcategories (CSS Dropdown) -->
+    <section class="category-section" id="grand-kitchen">
+      <div class="container">
+        <h2 class="section-title">Browse by Category</h2>
+
+        <!-- Category Navigation with Dropdown -->
+        <nav class="category-nav">
+          <ul class="category-menu">
+            <!-- Burgers Category -->
+            <li class="has-submenu">
+              <a href="#burgers">🍔 Burgers</a>
+              <ul class="submenu">
+                <li><a href="#veg-burgers">Veg Burgers</a></li>
+                <li><a href="#chicken-burgers">Chicken Burgers</a></li>
+                <li><a href="#beef-burgers">Beef Burgers</a></li>
+                <li><a href="#specialty-burgers">Specialty Burgers</a></li>
+              </ul>
+            </li>
+
+            <!-- Pizza Category -->
+            <li class="has-submenu">
+              <a href="#pizza">🍕 Pizza</a>
+              <ul class="submenu">
+                <li><a href="#veg-pizza">Veg Pizza</a></li>
+                <li><a href="#non-veg-pizza">Non-Veg Pizza</a></li>
+                <li><a href="#gourmet-pizza">Gourmet Pizza</a></li>
+                <li><a href="#stuffed-crust">Stuffed Crust</a></li>
+              </ul>
+            </li>
+
+            <!-- Indian Category -->
+            <li class="has-submenu">
+              <a href="#indian">🍛 Indian</a>
+              <ul class="submenu">
+                <li><a href="#north-indian">North Indian</a></li>
+                <li><a href="#south-indian">South Indian</a></li>
+                <li><a href="#biryani">Biryani</a></li>
+                <li><a href="#curries">Curries</a></li>
+              </ul>
+            </li>
+
+            <!-- Chinese Category -->
+            <li class="has-submenu">
+              <a href="#chinese">🥡 Chinese</a>
+              <ul class="submenu">
+                <li><a href="#noodles">Noodles</a></li>
+                <li><a href="#fried-rice">Fried Rice</a></li>
+                <li><a href="#manchurian">Manchurian</a></li>
+                <li><a href="#momos">Momos</a></li>
+              </ul>
+            </li>
+
+            <!-- Desserts Category -->
+            <li class="has-submenu">
+              <a href="#desserts">🍰 Desserts</a>
+              <ul class="submenu">
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#ice-cream">Ice Cream</a></li>
+                <li><a href="#indian-sweets">Indian Sweets</a></li>
+                <li><a href="#pastries">Pastries</a></li>
+              </ul>
+            </li>
+
+            <!-- Beverages Category -->
+            <li class="has-submenu">
+              <a href="#beverages">🥤 Beverages</a>
+              <ul class="submenu">
+                <li><a href="#cold-drinks">Cold Drinks</a></li>
+                <li><a href="#juices">Fresh Juices</a></li>
+                <li><a href="#shakes">Shakes</a></li>
+                <li><a href="#hot-beverages">Hot Beverages</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Menu Items Display -->
+    <section class="menu-items-section" id="burgers">
+      <div class="container">
+        <h2 class="section-title">Burgers Menu</h2>
+
+        <!-- Subcategory Tabs -->
+        <div class="subcategory-tabs">
+          <input type="radio" name="burger-tab" id="all-burgers" checked />
+          <input type="radio" name="burger-tab" id="veg-burgers-tab" />
+          <input type="radio" name="burger-tab" id="chicken-burgers-tab" />
+          <input type="radio" name="burger-tab" id="beef-burgers-tab" />
+
+          <label for="all-burgers" class="tab-btn">All Burgers</label>
+          <label for="veg-burgers-tab" class="tab-btn">Veg Burgers</label>
+          <label for="chicken-burgers-tab" class="tab-btn"
+            >Chicken Burgers</label
+          >
+          <label for="beef-burgers-tab" class="tab-btn">Beef Burgers</label>
+
+          <!-- All Burgers Content -->
+          <div class="tab-content show-all">
+            <div class="food-grid">
+              <!-- Veg Burger 1 -->
+              <div class="food-item veg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1525059696034-4967a729002a?w=400&h=300&fit=crop"
+                    alt="Veg Burger"
+                  />
+                  <span class="diet-badge veg-badge">🌿 VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Paneer Tikka Burger</h3>
+                  <p>Grilled paneer patty with special tikka sauce</p>
+                  <div class="food-footer">
+                    <span class="price">₹180</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Veg Burger 2 -->
+              <div class="food-item veg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&h=300&fit=crop"
+                    alt="Veg Burger"
+                  />
+                  <span class="diet-badge veg-badge">🌿 VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Aloo Tikki Burger</h3>
+                  <p>Crispy potato patty with mint chutney</p>
+                  <div class="food-footer">
+                    <span class="price">₹120</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Veg Burger 3 -->
+              <div class="food-item veg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop"
+                    alt="Veggie Burger"
+                  />
+                  <span class="diet-badge veg-badge">🌿 VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Veggie Delight Burger</h3>
+                  <p>Mixed vegetables with cheese and sauces</p>
+                  <div class="food-footer">
+                    <span class="price">₹150</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chicken Burger 1 -->
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop"
+                    alt="Chicken Burger"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Classic Chicken Burger</h3>
+                  <p>Crispy chicken patty with lettuce & mayo</p>
+                  <div class="food-footer">
+                    <span class="price">₹220</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chicken Burger 2 -->
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop"
+                    alt="Spicy Chicken"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Spicy Chicken Burger</h3>
+                  <p>Hot & spicy chicken with jalapeños</p>
+                  <div class="food-footer">
+                    <span class="price">₹240</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Beef Burger 1 -->
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop"
+                    alt="Beef Burger"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Classic Beef Burger</h3>
+                  <p>Juicy beef patty with cheese & pickles</p>
+                  <div class="food-footer">
+                    <span class="price">₹280</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Beef Burger 2 -->
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop"
+                    alt="Double Beef"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Double Beef Burger</h3>
+                  <p>Two beef patties with double cheese</p>
+                  <div class="food-footer">
+                    <span class="price">₹350</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Specialty Burger -->
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop"
+                    alt="Specialty Burger"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                  <span class="special-badge">CHEF SPECIAL</span>
+                </div>
+                <div class="food-details">
+                  <h3>Gourmet BBQ Burger</h3>
+                  <p>Premium beef with BBQ sauce & bacon</p>
+                  <div class="food-footer">
+                    <span class="price">₹420</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Veg Burgers Only -->
+          <div class="tab-content show-veg">
+            <div class="food-grid">
+              <div class="food-item veg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1525059696034-4967a729002a?w=400&h=300&fit=crop"
+                    alt="Veg Burger"
+                  />
+                  <span class="diet-badge veg-badge">🌿 VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Paneer Tikka Burger</h3>
+                  <p>Grilled paneer patty with special tikka sauce</p>
+                  <div class="food-footer">
+                    <span class="price">₹180</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="food-item veg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&h=300&fit=crop"
+                    alt="Veg Burger"
+                  />
+                  <span class="diet-badge veg-badge">🌿 VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Aloo Tikki Burger</h3>
+                  <p>Crispy potato patty with mint chutney</p>
+                  <div class="food-footer">
+                    <span class="price">₹120</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="food-item veg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop"
+                    alt="Veggie Burger"
+                  />
+                  <span class="diet-badge veg-badge">🌿 VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Veggie Delight Burger</h3>
+                  <p>Mixed vegetables with cheese and sauces</p>
+                  <div class="food-footer">
+                    <span class="price">₹150</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chicken Burgers Only -->
+          <div class="tab-content show-chicken">
+            <div class="food-grid">
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop"
+                    alt="Chicken Burger"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Classic Chicken Burger</h3>
+                  <p>Crispy chicken patty with lettuce & mayo</p>
+                  <div class="food-footer">
+                    <span class="price">₹220</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop"
+                    alt="Spicy Chicken"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Spicy Chicken Burger</h3>
+                  <p>Hot & spicy chicken with jalapeños</p>
+                  <div class="food-footer">
+                    <span class="price">₹240</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beef Burgers Only -->
+          <div class="tab-content show-beef">
+            <div class="food-grid">
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop"
+                    alt="Beef Burger"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Classic Beef Burger</h3>
+                  <p>Juicy beef patty with cheese & pickles</p>
+                  <div class="food-footer">
+                    <span class="price">₹280</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="food-item nonveg">
+                <div class="food-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop"
+                    alt="Double Beef"
+                  />
+                  <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+                </div>
+                <div class="food-details">
+                  <h3>Double Beef Burger</h3>
+                  <p>Two beef patties with double cheese</p>
+                  <div class="food-footer">
+                    <span class="price">₹350</span>
+                    <a href="#" class="add-btn">Add +</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2025 FoodHub. All rights reserved.</p>
+        <p>🌿 Vegetarian | 🍖 Non-Vegetarian Options Available</p>
+      </div>
+    </footer>
+  </body>
 </html>
