@@ -1,8 +1,4 @@
-/* ================================================
-   BASIC CSS - MENU PAGE (MATCHING MAIN PAGE THEME)
-   ================================================ */
 
-/* Reset basic styles */
 * {
     margin: 0;
     padding: 0;
@@ -24,9 +20,7 @@ body {
     padding-right: 20px;
 }
 
-/* ================================================
-   HEADER NAVIGATION
-   ================================================ */
+/* HEADER NAVIGATION */
 
 .main-header {
     background-color: #ff6b35;

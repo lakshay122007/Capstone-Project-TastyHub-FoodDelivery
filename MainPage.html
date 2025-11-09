@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodExpress - Fast & Fresh Food Delivery</title>
-    <link rel="stylesheet" href="draft.css">
+    <link rel="stylesheet" href="MainPage.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1 class="logo">Food<span>Express</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#restaurants">Restaurants</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<header>
+    <h1 class="logo">Food<span>Express</span></h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-right">
+        <a href="#cart" class="cart-icon">
+            🛒
+            <span class="cart-badge">0</span>
+        </a>
         <div class="auth-buttons">
-            <a href="#login" class="btn-login">Login</a>
-            <a href="#signup" class="btn-signup">Sign Up</a>
+            <a href="Login.html" class="btn-login">Login</a>
+            <a href="Signup.html" class="btn-signup">Sign Up</a>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Hero Section -->
+
     <section class="hero">
         <h2>Delicious Food Delivered to Your Doorstep</h2>
         <p>Order from your favorite restaurants and enjoy fresh meals at home</p>
@@ -54,10 +59,11 @@
         </div>
     </section>
 
-    <!-- Restaurants Section -->
     <section id="restaurants" class="restaurants">
         <h2 class="section-title">Popular Restaurants</h2>
         <div class="restaurant-grid">
+
+            <a href="Menu.html" style="text-decoration: none; color: inherit;">
             <div class="restaurant-card">
                 <div class="restaurant-image rest-1"></div>
                 <h3>Burger Palace</h3>
@@ -67,6 +73,8 @@
                     <span class="delivery-time">25-30 min</span>
                 </div>
             </div>
+            </a>
+            <a href="Menu.html" style="text-decoration: none; color: inherit;">
             <div class="restaurant-card">
                 <div class="restaurant-image rest-2"></div>
                 <h3>Pizza Corner</h3>
@@ -76,6 +84,8 @@
                     <span class="delivery-time">20-25 min</span>
                 </div>
             </div>
+            </a>
+            <a href="Menu.html" style="text-decoration: none; color: inherit;">
             <div class="restaurant-card">
                 <div class="restaurant-image rest-3"></div>
                 <h3>Spice Garden</h3>
@@ -85,6 +95,8 @@
                     <span class="delivery-time">30-35 min</span>
                 </div>
             </div>
+            </a>
+            <a href="Menu.html" style="text-decoration: none; color: inherit;">
             <div class="restaurant-card">
                 <div class="restaurant-image rest-4"></div>
                 <h3>Sushi Station</h3>
@@ -94,10 +106,11 @@
                     <span class="delivery-time">35-40 min</span>
                 </div>
             </div>
+            </a>
+            
         </div>
     </section>
 
-    <!-- Menu Section -->
     <section id="menu" class="menu">
         <h2 class="section-title">Featured Dishes</h2>
         <div class="menu-grid">
@@ -157,8 +170,6 @@
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
     <section id="about" class="about">
         <h2 class="section-title">About FoodExpress</h2>
         <div class="about-content">
@@ -183,7 +194,6 @@
         <div class="about-image"></div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-info">
@@ -205,6 +215,7 @@
                 <p>24/7 Delivery Service</p>
             </div>
         </div>
+        <hr>
         <div class="contact-form">
             <h3>Send Us a Message</h3>
             <form>
@@ -217,7 +228,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
 <footer>
     <div class="footer-content">
         <section class="footer-section">
@@ -227,9 +237,9 @@
         <section class="footer-section">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#restaurants">Restaurants</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="Menu.html">Menu</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
         </section>
