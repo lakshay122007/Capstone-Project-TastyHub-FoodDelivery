@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <!-- Header -->
+
     <header>
       <h1 class="logo">Food<span>Express</span></h1>
       <nav>
@@ -28,6 +28,7 @@
             🛒
             <span class="cart-badge">0</span>
         </a>
+        <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
         <div class="auth-buttons">
           <a href="Login.html" class="btn-login">Login</a>
           <a href="Signup.html" class="btn-signup">Sign Up</a>
@@ -35,7 +36,6 @@
       </div>
     </header>
 
-    <!-- Title  -->
     <section class="menu-Title">
       <div class="Title-content">
         <h1>Explore Our Menu</h1>
@@ -43,12 +43,12 @@
       </div>
     </section>
 
-    <!-- Restaurant Sections -->
+
     <section id="restaurant-section">
       <div class="container">
         <h2 class="section-title">Select Restaurant</h2>
         <div class="restaurant-grid">
-          <!-- Restaurant 1 -->
+
           <div class="restaurant-card">
             <div class="restaurant-image">
               <img
@@ -64,7 +64,6 @@
             </div>
           </div>
 
-          <!-- Restaurant 2 -->
           <div class="restaurant-card">
             <div class="restaurant-image">
               <img
@@ -80,7 +79,7 @@
             </div>
           </div>
 
-          <!-- Restaurant 3 -->
+
           <div class="restaurant-card">
             <div class="restaurant-image">
               <img
@@ -96,7 +95,7 @@
             </div>
           </div>
 
-          <!-- Restaurant 4 -->
+
           <div class="restaurant-card">
             <div class="restaurant-image">
               <img
@@ -115,12 +114,12 @@
       </div>
     </section>
 
-    <!-- Menu Items Display -->
+
     <section class="menu-items-section" id="burgers">
       <div class="container">
         <h2 class="section-title">Burgers Menu</h2>
 
-        <!-- Subcategory Tabs -->
+
         <div class="subcategory-tabs">
           <input type="radio" name="burger-tab" id="all-burgers" checked />
           <input type="radio" name="burger-tab" id="veg-burgers-tab" />
@@ -131,10 +130,10 @@
             >Chicken Burgers</label
           >
 
-          <!-- All Burgers Content -->
+
           <div class="tab-content show-all">
             <div class="food-grid">
-              <!-- Veg Burger 1 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -153,7 +152,7 @@
                 </div>
               </div>
 
-              <!-- Veg Burger 2 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -172,7 +171,7 @@
                 </div>
               </div>
 
-              <!-- Veg Burger 3 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -191,7 +190,7 @@
                 </div>
               </div>
 
-              <!-- Chicken Burger 1 -->
+
               <div class="food-item nonveg">
                 <div class="food-image">
                   <img
@@ -210,7 +209,7 @@
                 </div>
               </div>
 
-              <!-- Chicken Burger 2 -->
+
               <div class="food-item nonveg">
                 <div class="food-image">
                   <img
@@ -229,7 +228,7 @@
                 </div>
               </div>
 
-              <!-- Specialty Burger -->
+
               <div class="food-item nonveg">
                 <div class="food-image">
                   <img
@@ -251,7 +250,7 @@
             </div>
           </div>
 
-          <!-- Veg Burgers Only -->
+
           <div class="tab-content show-veg">
             <div class="food-grid">
               <div class="food-item veg">
@@ -310,7 +309,7 @@
             </div>
           </div>
 
-          <!-- Chicken Burgers Only -->
+
           <div class="tab-content show-chicken">
             <div class="food-grid">
               <div class="food-item nonveg">
@@ -354,13 +353,13 @@
       </div>
     </section>
 
-    <!-- Pizza Menu -->
+
 
     <section class="menu-items-section" id="pizza">
       <div class="container">
         <h2 class="section-title">Pizza Menu</h2>
 
-        <!-- Subcategory Tabs -->
+
         <div class="subcategory-tabs">
           <input type="radio" name="pizza-tab" id="all-pizzas" checked />
           <input type="radio" name="pizza-tab" id="veg-pizza-tab" />
@@ -374,10 +373,10 @@
             >Signature Pizza</label
           >
 
-          <!-- All Pizzas Content -->
+
           <div class="tab-content show-all-pizza">
             <div class="food-grid">
-              <!-- Veg Pizza 1 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -399,7 +398,7 @@
                 </div>
               </div>
 
-              <!-- Veg Pizza 2 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -421,7 +420,7 @@
                 </div>
               </div>
 
-              <!-- Veg Pizza 3 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -443,7 +442,7 @@
                 </div>
               </div>
 
-              <!-- Sides 1 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -465,7 +464,7 @@
                 </div>
               </div>
 
-              <!-- Sides 2 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -487,7 +486,7 @@
                 </div>
               </div>
 
-              <!-- Signature Pizza -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -512,7 +511,7 @@
             </div>
           </div>
 
-          <!-- Veg Pizzas Only -->
+
           <div class="tab-content show-veg-pizza">
             <div class="food-grid">
               <div class="food-item veg">
@@ -580,7 +579,7 @@
             </div>
           </div>
 
-          <!-- Sides Only -->
+
           <div class="tab-content show-sides">
             <div class="food-grid">
               <div class="food-item veg">
@@ -627,7 +626,7 @@
             </div>
           </div>
 
-          <!-- Signature Pizzas Only -->
+
           <div class="tab-content show-signature-pizza">
             <div class="food-grid">
               <div class="food-item veg">
@@ -679,12 +678,12 @@
       </div>
     </section>
 
-    <!-- INDIAN CUISINE SECTION -->
+
     <section class="menu-items-section" id="indian">
       <div class="container">
         <h2 class="section-title">Indian Cuisine Menu</h2>
 
-        <!-- Subcategory Tabs -->
+
         <div class="subcategory-tabs">
           <input type="radio" name="indian-tab" id="all-indian" checked />
           <input type="radio" name="indian-tab" id="north-indian-tab" />
@@ -696,10 +695,10 @@
           <label for="south-indian-tab" class="tab-btn">South Indian</label>
           <label for="biryani-tab" class="tab-btn">Biryani</label>
 
-          <!-- All Indian Content -->
+
           <div class="tab-content show-all-indian">
             <div class="food-grid">
-              <!-- North Indian 1 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -721,7 +720,7 @@
                 </div>
               </div>
 
-              <!-- North Indian 2 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -743,7 +742,7 @@
                 </div>
               </div>
 
-              <!-- South Indian 1 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -765,7 +764,7 @@
                 </div>
               </div>
 
-              <!-- South Indian 2 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -787,7 +786,7 @@
                 </div>
               </div>
 
-              <!-- Biryani 1 -->
+
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -809,7 +808,7 @@
                 </div>
               </div>
 
-              <!-- Biryani 2 -->
+
               <div class="food-item nonveg">
                 <div class="food-image">
                   <img
@@ -834,7 +833,7 @@
             </div>
           </div>
 
-          <!-- North Indian Only -->
+
           <div class="tab-content show-north-indian">
             <div class="food-grid">
               <div class="food-item veg">
@@ -877,7 +876,7 @@
             </div>
           </div>
 
-          <!-- South Indian Only -->
+
           <div class="tab-content show-south-indian">
             <div class="food-grid">
               <div class="food-item veg">
@@ -918,7 +917,7 @@
             </div>
           </div>
 
-          <!-- Biryani Only -->
+
           <div class="tab-content show-biryani">
             <div class="food-grid">
               <div class="food-item veg">
@@ -966,12 +965,12 @@
       </div>
     </section>
 
-    <!-- SUSHI SECTION -->
+    
     <section class="menu-items-section" id="sushi">
       <div class="container">
         <h2 class="section-title">Sushi Menu</h2>
 
-        <!-- Subcategory Tabs -->
+        
         <div class="subcategory-tabs">
           <input type="radio" name="sushi-tab" id="all-sushi" checked />
           <input type="radio" name="sushi-tab" id="veg-sushi-tab" />
@@ -983,10 +982,10 @@
           <label for="nonveg-sushi-tab" class="tab-btn">Non-Veg Sushi</label>
           <label for="special-sushi-tab" class="tab-btn">Special Rolls</label>
 
-          <!-- All Sushi Content -->
+          
           <div class="tab-content show-all-sushi">
             <div class="food-grid">
-              <!-- Veg Sushi 1 -->
+              
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -1008,7 +1007,7 @@
                 </div>
               </div>
 
-              <!-- Veg Sushi 2 -->
+              
               <div class="food-item veg">
                 <div class="food-image">
                   <img
@@ -1030,7 +1029,7 @@
                 </div>
               </div>
 
-              <!-- Non-Veg Sushi 1 -->
+              
               <div class="food-item nonveg">
                 <div class="food-image">
                   <img
@@ -1052,7 +1051,7 @@
                 </div>
               </div>
 
-              <!-- Non-Veg Sushi 2 -->
+              
               <div class="food-item nonveg">
                 <div class="food-image">
                   <img
@@ -1073,7 +1072,7 @@
                 </div>
               </div>
 
-              <!-- Special Roll 1 -->
+             
               <div class="food-item nonveg">
                 <div class="food-image">
                   <img
@@ -1121,7 +1120,7 @@
             </div>
           </div>
 
-          <!-- Veg Sushi Only -->
+         
           <div class="tab-content show-veg-sushi">
             <div class="food-grid">
               <div class="food-item veg">
@@ -1165,7 +1164,7 @@
             </div>
           </div>
 
-          <!-- Non-Veg Sushi Only -->
+          
           <div class="tab-content show-nonveg-sushi">
             <div class="food-grid">
               <div class="food-item nonveg">
@@ -1211,7 +1210,7 @@
             </div>
           </div>
 
-          <!-- Special Sushi Only -->
+          
           <div class="tab-content show-special-sushi">
             <div class="food-grid">
               <div class="food-item nonveg">
@@ -1257,12 +1256,13 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer class="main-footer">
       <div class="container">
         <p>2025 FoodExpress. All rights reserved.</p>
         <p>🌿 Vegetarian | 🍖 Non-Vegetarian Options Available</p>
       </div>
     </footer>
+    <script src="menu.js"></script>
   </body>
 </html>
