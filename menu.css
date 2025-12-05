@@ -303,7 +303,7 @@ nav ul li a:hover {
   border-color: #ff6b35;
 }
 
-/* Tab Content Display */
+/* Tab Content */
 .tab-content {
   display: none;
   margin-top: 30px;
@@ -325,7 +325,7 @@ nav ul li a:hover {
   display: block;
 }
 
-/* PIZZA TAB CONTROLS */
+/* Pizza switch */
 #all-pizzas:checked ~ .show-all-pizza {
   display: block;
 }
@@ -342,7 +342,7 @@ nav ul li a:hover {
   display: block;
 }
 
-/* INDIAN CUISINE TAB CONTROLS */
+/* Indian cuisine switch */
 #all-indian:checked ~ .show-all-indian {
   display: block;
 }
@@ -359,7 +359,7 @@ nav ul li a:hover {
   display: block;
 }
 
-/* SUSHI TAB CONTROLS */
+/* Sushi switch */
 #all-sushi:checked ~ .show-all-sushi {
   display: block;
 }
@@ -376,7 +376,7 @@ nav ul li a:hover {
   display: block;
 }
 
-/* Food items Grid */
+
 
 .food-grid {
   display: flex;
