@@ -82,3 +82,20 @@ form {
     text-decoration: underline;
     cursor: pointer;
 }
+
+
+#toggle-password {
+    border: 1px solid #ddd;
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 10px 14px;
+    background-color: #ff6b35;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#toggle-password:hover {
+    background-color: #e55a2b;
+}

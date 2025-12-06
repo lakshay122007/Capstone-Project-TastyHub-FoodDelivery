@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background: url("https://png.pngtree.com/thumb_back/fh260/background/20210805/pngtree-modern-simple-elegant-cool-gradient-cream-landing-page-website-background-image_757446.jpg") no-repeat center center/cover;
+  background: url("https://png.pngtree.com/thumb_back/fh260/background/20210805/pngtree-modern-simple-elegant-cool-gradient-cream-landing-page-website-background-image_757446.jpg")
+    no-repeat center center/cover;
   background-attachment: fixed;
   color: #333;
   line-height: 1.6;
@@ -23,8 +24,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-
-
 
 header {
   background-color: #ff6b35;
@@ -68,7 +67,6 @@ nav ul li a:hover {
   color: #ffe66d;
 }
 
-
 .header-right {
   display: flex;
   align-items: center;
@@ -86,7 +84,6 @@ nav ul li a:hover {
 .cart-icon:hover {
   transform: scale(1.1);
 }
-
 
 .cart-badge {
   position: absolute;
@@ -136,10 +133,9 @@ nav ul li a:hover {
   background-color: #ffd93d;
 }
 
-
-
 .menu-Title {
-  background: url("https://as1.ftcdn.net/jpg/01/55/42/56/1000_F_155425617_Ldu5aMd82908ljZTgN7t0RewhmjpXOTj.jpg") no-repeat center center/cover;
+  background: url("https://as1.ftcdn.net/jpg/01/55/42/56/1000_F_155425617_Ldu5aMd82908ljZTgN7t0RewhmjpXOTj.jpg")
+    no-repeat center center/cover;
   padding-top: 150px;
   padding-bottom: 80px;
   text-align: center;
@@ -171,8 +167,6 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-
-
 
 #restaurant-section {
   padding-top: 60px;
@@ -261,15 +255,11 @@ nav ul li a:hover {
   background-color: #e55a2b;
 }
 
-
-
 .menu-items-section {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: transparent;
 }
-
-
 
 .subcategory-tabs {
   margin-top: 30px;
@@ -303,7 +293,6 @@ nav ul li a:hover {
   border-color: #ff6b35;
 }
 
-
 .tab-content {
   display: none;
   margin-top: 30px;
@@ -325,7 +314,6 @@ nav ul li a:hover {
   display: block;
 }
 
-
 #all-pizzas:checked ~ .show-all-pizza {
   display: block;
 }
@@ -341,7 +329,6 @@ nav ul li a:hover {
 #signature-pizza-tab:checked ~ .show-signature-pizza {
   display: block;
 }
-
 
 #all-indian:checked ~ .show-all-indian {
   display: block;
@@ -359,7 +346,6 @@ nav ul li a:hover {
   display: block;
 }
 
-
 #all-sushi:checked ~ .show-all-sushi {
   display: block;
 }
@@ -375,8 +361,6 @@ nav ul li a:hover {
 #special-sushi-tab:checked ~ .show-special-sushi {
   display: block;
 }
-
-
 
 .food-grid {
   display: flex;
@@ -501,8 +485,6 @@ nav ul li a:hover {
   font-size: 14px;
 }
 
-
-
 @media (max-width: 768px) {
   .main-header .container {
     flex-direction: column;
@@ -571,116 +553,156 @@ nav ul li a:hover {
   }
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 0;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .header-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  .btn-login,
+  .btn-signup {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
 
 body.dark-theme {
-    background-color: #121212;
-    color: #f5f5f5;
+  background: #1a1a1a !important;
+  color: #e0e0e0;
 }
 
 .theme-toggle {
-    background: none;
-    border: 2px solid #ffe66d;
-    color: #ffe66d;
-    border-radius: 20px;
-    padding: 6px 14px;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s;
-    margin-left: 5px;
+  background: none;
+  border: 2px solid #ffe66d;
+  color: #ffe66d;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-left: 5px;
 }
 
 .theme-toggle:hover {
-    background: #ffe66d;
-    color: #333;
+  background: #ffe66d;
+  color: #333;
 }
 
 body.dark-theme header {
-    background-color: #181818;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+  background-color: #181818;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 body.dark-theme .logo {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 body.dark-theme .logo span {
-    color: #ffe66d;
+  color: #ffe66d;
 }
 
 body.dark-theme nav ul li a {
-    color: #f5f5f5;
+  color: #f5f5f5;
 }
 
 body.dark-theme nav ul li a:hover {
-    color: #ffe66d;
+  color: #ffe66d;
 }
-
 
 body.dark-theme .menu-hero {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-
 body.dark-theme .restaurant-card {
-    background-color: #1f1f1f;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  background-color: #1f1f1f;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
 }
 
 body.dark-theme .restaurant-info h3 {
-    color: #ffe66d;
+  color: #ffe66d;
 }
 
 body.dark-theme .restaurant-info p {
-    color: #cccccc;
+  color: #cccccc;
 }
 
-
 body.dark-theme .category-section {
-    background-color: #181818;
+  background-color: #181818;
 }
 
 body.dark-theme .category-menu {
-    background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 body.dark-theme .category-menu > li > a {
-    color: #f5f5f5;
+  color: #f5f5f5;
 }
 
 body.dark-theme .category-menu > li > a:hover {
-    background-color: #ff6b35;
-    color: #ffffff;
+  background-color: #ff6b35;
+  color: #ffffff;
 }
 
-
 body.dark-theme .food-item {
-    background-color: #1f1f1f;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  background-color: #1f1f1f;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
 }
 
 body.dark-theme .food-details h3 {
-    color: #ffe66d;
+  color: #ffe66d;
 }
 
 body.dark-theme .food-details p {
-    color: #cccccc;
+  color: #cccccc;
 }
-
 
 body.dark-theme .add-btn,
 body.dark-theme .view-menu-btn {
-    background-color: #ff6b35;
-    color: #ffffff;
+  background-color: #ff6b35;
+  color: #ffffff;
 }
 
 body.dark-theme .add-btn:hover,
 body.dark-theme .view-menu-btn:hover {
-    background-color: #e55a2b;
+  background-color: #e55a2b;
 }
 
-  
 body.dark-theme .main-footer {
-    background-color: #111111;
-    color: #f5f5f5;
+  background-color: #111111;
+  color: #f5f5f5;
 }

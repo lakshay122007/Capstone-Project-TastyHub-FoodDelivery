@@ -4,7 +4,7 @@ let btns = document.querySelectorAll('.btn-order');
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', function (event) {
-    event.preventDefault();     
+    event.preventDefault(); 
     cart_item++;
     if (cartBadge) {
       cartBadge.textContent = cart_item;
@@ -19,6 +19,7 @@ search.addEventListener('submit', function (e) {
   });
 
 
+  
 function toggleTheme() {
   document.body.classList.toggle('dark-theme');
   
@@ -29,3 +30,5 @@ function toggleTheme() {
     toggleBtn.textContent = '🌙';
   }
 }
+
+
